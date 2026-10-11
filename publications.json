@@ -1,7 +1,7 @@
 [
   {
     "title": "A Lightweight Safety Prefilter for LLM Agents: Mitigating Context-Dependent Shortfalls in SAEs",
-    "authors": ["Yoonsol Jung", "TODO: co-authors"],
+    "authors": ["Yoonsol Jung", "Ren Meiyang", "Hyochang Yang", "Jungpyo Hong", "Hyonsu Choe"],
     "venue": "NeurIPS 2026 Workshop on Agents in the Wild (AIWILD)",
     "year": 2026,
     "type": "workshop",
@@ -9,6 +9,6 @@
     "selected": true,
     "links": {},
     "note": "Poster",
-    "_todo": "Replace the co-author placeholder; add links.arxiv once the paper is on arXiv."
+    "_todo": "Add links.arxiv once the paper is on arXiv."
   }
 ]

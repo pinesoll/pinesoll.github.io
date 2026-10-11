@@ -49,4 +49,4 @@ Add an object to the array in `publications.json`. Within a year, entries show i
 - `note`: awards or presentation info (optional)
 - Any author starting with `Yoonsol Jung` (e.g. `Yoonsol Jung*`) is shown in bold.
 
-News items are edited directly in `index.html` (newest first).
+News and Experience entries are edited directly in `index.html` (newest first; Experience has a copy-paste template in a comment).

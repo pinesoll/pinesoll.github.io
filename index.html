@@ -14,7 +14,6 @@
 
     <!-- ===== Profile ===== -->
     <header class="profile">
-      <!-- TODO: put your photo at assets/profile.jpg (square, ~400x400). Falls back to a placeholder until then. -->
       <img class="profile-photo" src="assets/profile.jpg" alt="Photo of Yoonsol Jung"
            onerror="this.onerror=null; this.src='assets/profile-placeholder.svg';">
 
@@ -26,17 +25,19 @@
           I am an undergraduate student in the School of Computing at KAIST.
           My research interests lie in the <strong>safety</strong>, <strong>interpretability</strong>,
           and <strong>trustworthiness</strong> of AI agents, with a focus on understanding and reliably
-          controlling the behavior of LLM-based agents.
+          controlling the behavior of LLM-based agents. In the long term, I aim to extend this line of
+          work to <strong>Physical AI</strong>, where agents act in the real world and failures carry
+          physical consequences.
         </p>
         <p>
-          I am currently an undergraduate researcher at the
+          I am currently an undergraduate research intern at the
           <a href="https://alinlab.kaist.ac.kr/">Algorithmic Intelligence Lab (ALIN)</a> at KAIST,
           advised by Prof. <a href="https://alinlab.kaist.ac.kr/shin.html">Jinwoo Shin</a>.
+          Previously, I worked on AI reliability as a co-op intern at NC AI.
         </p>
 
         <nav class="links" aria-label="Contact and profiles">
-          <!-- TODO: replace with your email address -->
-          <a href="mailto:TODO@kaist.ac.kr" aria-label="Email">
+          <a href="mailto:pinesoll@kaist.ac.kr" aria-label="Email">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>
             <span>Email</span>
           </a>
@@ -68,15 +69,17 @@
     <section id="news">
       <h2>News</h2>
       <ul class="news">
-        <!-- TODO: confirm the date below -->
         <li>
-          <time datetime="2026-10">Oct 2026</time>
+          <time datetime="2026-09-30">Sep 2026</time>
           <span>Our paper on a lightweight safety prefilter for LLM agents was accepted to the NeurIPS 2026 Workshop on Agents in the Wild (AIWILD).</span>
         </li>
-        <!-- TODO: fill in the date you joined ALIN, and add more news items above this line -->
         <li>
-          <time datetime="2026">TODO</time>
-          <span>Joined the <a href="https://alinlab.kaist.ac.kr/">Algorithmic Intelligence Lab (ALIN)</a> at KAIST as an undergraduate researcher.</span>
+          <time datetime="2026-08">Aug 2026</time>
+          <span>Joined the <a href="https://alinlab.kaist.ac.kr/">Algorithmic Intelligence Lab (ALIN)</a> at KAIST as an undergraduate research intern.</span>
+        </li>
+        <li>
+          <time datetime="2026-03">Mar 2026</time>
+          <span>Started a co-op internship at the AI Reliability Team, Agentic AI Lab, NC AI.</span>
         </li>
       </ul>
     </section>
@@ -94,6 +97,136 @@
       <div id="pub-list" aria-live="polite">
         <p class="muted">Loading publications…</p>
       </div>
+    </section>
+
+    <!-- ===== Education ===== -->
+    <section id="education">
+      <h2>Education</h2>
+      <ul class="exp-list">
+        <li class="exp">
+          <div class="exp-head">
+            <div>
+              <div class="exp-role">B.S. in Computer Science</div>
+              <div class="exp-org">School of Computing, KAIST</div>
+            </div>
+            <span class="exp-date">Mar 2023 – Aug 2027 (expected)</span>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===== Experience (research & internships, newest first) =====
+         To add an entry, copy one <li class="exp">…</li> block and edit it.
+         Each project is one <li> inside .exp-projects; delete the list if there are none. -->
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul class="exp-list">
+        <li class="exp">
+          <div class="exp-head">
+            <div>
+              <div class="exp-role">Undergraduate Research Intern</div>
+              <div class="exp-org">
+                <a href="https://alinlab.kaist.ac.kr/">Algorithmic Intelligence Lab (ALIN)</a>, KAIST
+                · Advisor: Prof. <a href="https://alinlab.kaist.ac.kr/shin.html">Jinwoo Shin</a>
+              </div>
+            </div>
+            <span class="exp-date">Aug 2026 – Present</span>
+          </div>
+          <!-- TODO: project description(s), e.g.
+          <ul class="exp-projects"><li>…</li></ul> -->
+        </li>
+
+        <li class="exp">
+          <div class="exp-head">
+            <div>
+              <div class="exp-role">Co-op Intern, AI Reliability Team</div>
+              <div class="exp-org">Agentic AI Lab, NC AI · KAIST CS Co-op Program</div>
+            </div>
+            <span class="exp-date">Mar 2026 – Aug 2026</span>
+          </div>
+          <ul class="exp-projects">
+            <li>
+              Developed an SAE-based safety prefilter that detects harmful behavior injected through
+              tool calls in agentic LLM systems before execution, improving detection precision and
+              recall in adversarial tool-call scenarios.
+              <a href="#publications">[NeurIPS 2026 Workshop AIWILD]</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="exp">
+          <div class="exp-head">
+            <div>
+              <div class="exp-role">Undergraduate Research Intern</div>
+              <div class="exp-org">
+                <a href="https://sites.google.com/view/tkkim">Computer Vision and Learning Lab (KCVL)</a>, KAIST
+                · Advisor: Prof. Tae-Kyun Kim
+              </div>
+            </div>
+            <span class="exp-date">Dec 2025 – Feb 2026</span>
+          </div>
+          <!-- TODO: project description(s) -->
+        </li>
+
+        <li class="exp">
+          <div class="exp-head">
+            <div>
+              <div class="exp-role">Undergraduate Research Intern</div>
+              <div class="exp-org">
+                <a href="https://dm.kaist.ac.kr/">Data Mining Lab</a>, KAIST
+                · Advisor: Prof. <a href="https://dm.kaist.ac.kr/jaegil/">Jae-Gil Lee</a>
+              </div>
+            </div>
+            <span class="exp-date">Jul 2025 – Dec 2025</span>
+          </div>
+          <ul class="exp-projects">
+            <li>
+              Built an "I-don't-know" (IDK) dataset by tagging whether an LLM knows the answer to a given
+              query, in a project with KISTI (Korea Institute of Science and Technology Information).
+            </li>
+            <li>
+              Evaluated retrieval-necessity prediction on science and technology data, analyzed which query
+              characteristics determine whether retrieval is needed, and developed a method that adaptively
+              decides when to invoke retrieval.
+            </li>
+          </ul>
+        </li>
+
+        <li class="exp">
+          <div class="exp-head">
+            <div>
+              <div class="exp-role">Undergraduate Research Intern</div>
+              <div class="exp-org">
+                <a href="https://dsail.kaist.ac.kr/">Data Science &amp; Artificial Intelligence Lab (DSAIL)</a>, KAIST
+                · Advisor: Prof. Chanyoung Park
+              </div>
+            </div>
+            <span class="exp-date">Dec 2024 – Feb 2025</span>
+          </div>
+          <ul class="exp-projects">
+            <li>
+              Studied machine learning for molecular and spectroscopic data: reimplemented
+              <em>Shift-Robust Molecular Relational Learning with Causal Substructure</em> and reviewed
+              CNN- and graph-based methods for identifying compounds from infrared spectra.
+            </li>
+          </ul>
+        </li>
+
+        <!-- TODO: internships and other individual research. Template:
+        <li class="exp">
+          <div class="exp-head">
+            <div>
+              <div class="exp-role">Research Intern</div>
+              <div class="exp-org"><a href="https://...">Organization / Lab</a>, Location · Mentor: Name</div>
+            </div>
+            <span class="exp-date">Jan 2025 – Feb 2025</span>
+          </div>
+          <ul class="exp-projects">
+            <li>Project: what you did and what came out of it.</li>
+          </ul>
+        </li>
+        -->
+      </ul>
     </section>
 
     <footer class="footer">
