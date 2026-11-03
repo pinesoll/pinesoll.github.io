@@ -14,6 +14,25 @@
 
   document.getElementById("year").textContent = new Date().getFullYear();
 
+  // Links marked data-coming-soon show a short "Coming soon" bubble instead of navigating.
+  document.querySelectorAll("a[data-coming-soon]").forEach((link) => {
+    const tip = document.createElement("span");
+    tip.className = "soon-tip";
+    tip.setAttribute("role", "status");
+    link.appendChild(tip);
+    let timer;
+    link.addEventListener("click", (e) => {
+      e.preventDefault();
+      tip.textContent = "Coming soon";
+      link.classList.add("show-tip");
+      clearTimeout(timer);
+      timer = setTimeout(() => {
+        link.classList.remove("show-tip");
+        tip.textContent = "";
+      }, 1800);
+    });
+  });
+
   function escapeHtml(s) {
     return String(s).replace(/[&<>"']/g, (c) => ({
       "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"

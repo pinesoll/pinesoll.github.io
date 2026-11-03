@@ -96,6 +96,32 @@ section { margin-top: 48px; }
 
 .links svg { width: 18px; height: 18px; }
 
+.links a[data-coming-soon] {
+  position: relative;
+  color: var(--muted);
+}
+
+.soon-tip {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 50%;
+  transform: translate(-50%, 4px);
+  padding: 3px 8px;
+  border-radius: 6px;
+  background: var(--fg);
+  color: var(--bg);
+  font-size: 0.75rem;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s, transform 0.15s;
+}
+
+.links a.show-tip .soon-tip {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
 /* ---------- News ---------- */
 .news {
   list-style: none;
